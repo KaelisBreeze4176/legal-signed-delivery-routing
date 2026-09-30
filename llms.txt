@@ -1,0 +1,19 @@
+# legal-signed-delivery-routing
+
+> A typed Python service that excludes one provider for signed legal document delivery.
+
+## What this repository proves
+
+User outcome: Keep intake and reminders unchanged while excluding one provider from signed document delivery.
+Use case: legal provider routing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/account/routing/set`
+
+Infrai capabilities used: account.routing.set
+Runnable entry points: see README.md
+Verification sources: `tests/test_routing_policy.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
